@@ -15,4 +15,6 @@ class TestFibonacciSequenceMethods(unittest.TestCase):
         self.assertEqual(find_sum(35), 44)
 
 if __name__ == '__main__':
-    unittest.main()
+    # unittest.main()
+    suite = unittest.TestLoader().loadTestsFromTestCase(TestFibonacciSequenceMethods)
+    unittest.TextTestRunner(verbosity=1).run(suite)
