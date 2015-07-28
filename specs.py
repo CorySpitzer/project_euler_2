@@ -15,6 +15,18 @@ class TestFibonacciSequenceMethods(unittest.TestCase):
         self.assertEqual(find_sum(35), 44)
 
 if __name__ == '__main__':
-    # unittest.main()
-    suite = unittest.TestLoader().loadTestsFromTestCase(TestFibonacciSequenceMethods)
-    unittest.TextTestRunner(verbosity=1).run(suite)
+    # run the tests with:
+    unittest.main()
+
+    # or:
+    # suite = unittest.TestLoader().loadTestsFromTestCase(TestFibonacciSequenceMethods)
+    # unittest.TextTestRunner(verbosity=2).run(suite)
+
+    # as well as from the command line:
+    # `python3 -m unittest specs.py`
+    # `python3 -m unittest specs.TestFibonacciSequenceMethods`
+    # `python3 -m unittest specs.TestFibonacciSequenceMethods.test_even_sum`
+
+
+    # or learn more with the unittest module help:
+    # `python -m unittest -h`
